@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02互動圖文卡片</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      .wrap {
+        width: 100%;
+        display: flex;
+      }
+      .item {
+        width: 25%;
+        position: relative;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .item .txt {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      /* 父層摸到子層做事情 */
+      .item:hover .txt {
+        opacity: 1;
+      }
+
+      .item .txt h2 {
+        font-size: 2rem;
+        color: #ff0;
+        font-weight: 500;
+      }
+      .item h2:after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        margin: 10px 0;
+        background-color: #ff0;
+        transition: width 0.5s 0.5s;
+      }
+      .item:hover h2:after {
+        width: 100%;
+      }
+      .item p {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 100;
+      }
+      .item .txt p {
+        font-size: 0.5rem;
+        color: #fff;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=10" />
+        <div class="txt">
+          <h2>網際網路太陽，此外能力，很有這麼，消費。</h2>
+          <p>
+            前來主流儘量想像，上市頻道檢驗最低總結思考主流還是將會反應訊息，夥伴知道，轉身一部然而用戶名自動輸出眼神連接年輕力量教育活動，森林室內語文思維解放又有但是姐姐，全國資料家庭，訓練節目理由收購參數打造歌曲，降低於是影視全球婚姻字元人員，經過享受批准，一下詳.。
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=5" />
+        <div class="txt">
+          <h2>註明跟着求職，習慣我現在模組在那裡否則。</h2>
+          <p>
+            模組鎖定出處緊張，超市一隻父親期間到處還沒有改革如同相當，開通眼前他們的顯得經濟幸福我和適用成功房。
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=30" />
+        <div class="txt">
+          <h2>減少含有複製企業，運用矛盾時間理念，好。</h2>
+          <p>釣魚你不令人群發，影音發現求助不說上漲年輕人，用於不限，證。</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=20" />
+        <div class="txt">
+          <h2>發達一款各國大陸付款但他之間你可以新臺幣，一直呼吸，我市類。</h2>
+          <p>帶著尺寸算是臺灣人，後悔網際如同動作你的開發商閲讀，在此成。</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
