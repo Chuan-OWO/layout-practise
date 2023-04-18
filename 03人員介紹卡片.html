@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03人員介紹卡片</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        background-color: #003;
+      }
+      .wrap {
+        width: 1200px;
+        display: flex;
+        margin: auto;
+      }
+      .item {
+        width: 368px;
+        margin: 15px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        transform: translateY(0px);
+        transition: 0.5s;
+      }
+
+      .item img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .item h2 {
+        border-bottom: 1px solid #888;
+        padding-bottom: 0.3em;
+        margin-bottom: 0.4em;
+        font-weight: 900;
+        transition: 0.5s;
+      }
+      .item p {
+        line-height: 1.6;
+        font-weight: 300;
+        transition: 0.5s;
+      }
+      .item .txt {
+        padding: 20px;
+        position: relative;
+      }
+
+      .item .txt:before {
+        content: "";
+
+        position: absolute;
+
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+
+        border-top: 50px solid transparent;
+        border-left: 184px solid #fff;
+        border-right: 184px solid #fff;
+        transform: translateY(-100%);
+      }
+      .item:hover {
+        transform: translateY(-10%);
+      }
+
+      .item:hover {
+        background-image: linear-gradient(0deg, #fb8076, #feb85d);
+      }
+
+      .item:hover .txt:before {
+        border-left: 184px solid #ff893b;
+        border-right: 184px solid #ff893b;
+      }
+
+      .item:hover h2 {
+        color: #fff;
+        border-bottom-color: #fff;
+      }
+      .item:hover p {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=10" alt="" />
+        <div class="txt">
+          <h2>客戶就像</h2>
+          <p>
+            對待顯示內容簡介姓名廣播尤其是夏天重點，寶貝自己快車身份費用許可一邊記者眼光專輯，有點遠註冊時間相冊預覽投資又是，階段宜蘭留包括難道分為道理食物，
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=2" alt="" />
+        <div class="txt">
+          <h2>並在豐原</h2>
+          <p>
+            自身怎樣一會兒聊天資本人群直播主條款，私人全身瀏覽哪些收益，眼睛動畫美容發達一支之外產權經營許可證那麼人員操作當天認定，警方作家走勢後悔操作系統等待家庭收藏陽明山這一點，不但新竹教材包括難道分為道理食物，否則二人當年行情你不教學回去，作家給我們收費勞動培。
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=5" alt="" />
+        <div class="txt">
+          <h2>手續化</h2>
+          <p>
+            論壇自由，台北準確學院精神土地有一種論文接受有一定規定正是醫生簡直，不承擔適當研究生出來前往大家都專業地區試試必須體育難道，寵物好多技術失望冠軍安全推進實施短信目前比較提醒塑膠，頓時多麼組合住房家族直接真實性姓名貢獻是在，參加食物意思熱情，機構典型我國一。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
