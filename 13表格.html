@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(90deg, #3d5894, #09c8a5);
+      }
+
+      .table {
+        width: 800px;
+        margin: auto;
+      }
+      .table table {
+        width: 100%;
+        border: 3px double #666;
+        background: #fff;
+        border-radius: 10px;
+      }
+      .table thead {
+        background: #333;
+        color: #fff;
+      }
+      .table thead th:first-child {
+        border-radius: 7px 0 0 0;
+      }
+      .table thead th:last-child {
+        border-radius: 0 7px 0 0;
+      }
+
+      .table tbody a{
+        color:#777;
+      }
+      .table tbody tr:nth-child(even) {
+        background-color: #ffa;
+      }
+      .table tbody tr:hover{
+        background-color: #FEE;
+      }
+      
+     
+      
+      .table tfoot td:last-child {
+        border-radius: 0 0 0 7px;
+      }
+      .table tfoot td:last-child {
+        border-radius: 0 0 7px 0;
+      }
+      .table th {
+        border: 1px solid #666;
+        padding: 6px 10px;
+      }
+      .table td {
+        border: 1px solid #666;
+        padding: 6px 10px;
+      }
+      .table caption {
+        caption-side: bottom;
+        text-align: right;
+        padding: 10px 0;
+        color:#CCC;
+      }
+      .table caption a{
+        color:#eee;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <caption>
+          練習 coke
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
+            <th scope="col">6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">私服如果</td>
+            <td>開通原來。</td>
+            <td>搭配聯繫。</td>
+            <td>dsrsdf</td>
+            <td>dsf</td>
+            <td>6sdfdsfds</td>
+          </tr>
+          <tr>
+            <td>現代化來。</td>
+            <td>為什麼信。</td>
+            <td>中文故事。</td>
+            <td>環節股份。</td>
+            <td>溫度高中。</td>
+            <td>肯定論文。</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td></td>
+            <td></td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>敬請期待</td>
+            <td colspan="5">敬請期待</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

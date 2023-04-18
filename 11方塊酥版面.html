@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊酥版面</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      body {
+        background-color: #000;
+      }
+      .wrap {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .item {
+        float: left;
+        position: relative;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .item:first-child {
+        width: 50%;
+      }
+      .item:first-child ~ .item {
+        width: 25%;
+      }
+      .item .txt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        opacity: 0;
+        /* display: none; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        transition: 0.5s;
+      }
+      .item:hover .txt {
+        /* display: flex; */
+        transform: scale(1);
+        opacity: 1;
+      }
+      .item h3 {
+        margin-bottom: 0.4em;
+      }
+      .item p {
+        font-weight: 100;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=10" alt="" />
+        <div class="txt">
+          <h3>中文一時。</h3>
+          <p>
+            學院一流最後，看看亞洲暴力網頁課程參觀創新半年列表舉行死了，運作不少風格傳真做出不大市委，一些日月潭情形輸入傳真，實驗這一點圖書，而是公主印刷驚訝戰爭一座其實進度女孩戰鬥勞動緊緊，上有表示左右終於求助手術承認方便上一頁對手我說身影缺乏對待，暫無威脅，每個。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=20" alt="" />
+        <div class="txt">
+          <h3>驚人休息。</h3>
+          <p>
+            學院一流最後，看看亞洲暴力網頁課程參觀創新半年列表舉行死了，運作不少風格傳真做出不大市委，一些日月潭情形輸入傳真，實驗這一點圖書，而是公主印刷驚訝戰爭一座其實進度女孩戰鬥勞動緊緊，上有表示左右終於求助手術承認方便上一頁對手我說身影缺乏對待，暫無威脅，每個。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=30" alt="" />
+        <div class="txt">
+          <h3>驚人休息。</h3>
+          <p>
+            學院一流最後，看看亞洲暴力網頁課程參觀創新半年列表舉行死了，運作不少風格傳真做出不大市委，一些日月潭情形輸入傳真，實驗這一點圖書，而是公主印刷驚訝戰爭一座其實進度女孩戰鬥勞動緊緊，上有表示左右終於求助手術承認方便上一頁對手我說身影缺乏對待，暫無威脅，每個。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=40" alt="" />
+        <div class="txt">
+          <h3>驚人休息。</h3>
+          <p>
+            學院一流最後，看看亞洲暴力網頁課程參觀創新半年列表舉行死了，運作不少風格傳真做出不大市委，一些日月潭情形輸入傳真，實驗這一點圖書，而是公主印刷驚訝戰爭一座其實進度女孩戰鬥勞動緊緊，上有表示左右終於求助手術承認方便上一頁對手我說身影缺乏對待，暫無威脅，每個。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=50" alt="" />
+        <div class="txt">
+          <h3>驚人休息。</h3>
+          <p>
+            學院一流最後，看看亞洲暴力網頁課程參觀創新半年列表舉行死了，運作不少風格傳真做出不大市委，一些日月潭情形輸入傳真，實驗這一點圖書，而是公主印刷驚訝戰爭一座其實進度女孩戰鬥勞動緊緊，上有表示左右終於求助手術承認方便上一頁對手我說身影缺乏對待，暫無威脅，每個。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

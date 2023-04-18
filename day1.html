@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 100vh;
+        background-color: #ccc;
+        background: linear-gradient(115deg, #7bf 50%, transparent 50%) center
+            center/ 100% 100%,
+          url("https://picsum.photos/1200/200?random=10") right center / auto
+            100%;
+      }
+      .container {
+        width: 100%;
+        min-width: 1440px;
+        height: 100%;
+        margin: auto;
+      }
+      .banner-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
+      .banner-txt h1 {
+        font-size: 80px;
+        border-bottom: 1px solid #333;
+        font-weight: 900;
+        padding-bottom: 0.3em;
+        margin-bottom: 0.3em;
+      }
+      .banner-txt h1 small {
+        display: block;
+        font-size: 53px;
+        font-weight: 700;
+      }
+      .banner-txt h2 {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .banner-txt p {
+        font-size: 30px;
+        font-weight: 300;
+      }
+
+      @media (max-width: 900px) {
+        .banner-txt {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+        }
+        .banner-txt h1 {
+          font-size: 50px;
+          border-bottom: 1px solid #333;
+          font-weight: 700;
+          padding-bottom: 0.3em;
+          margin-bottom: 0.3em;
+        }
+        .banner-txt h1 small {
+          display: block;
+          font-size: 40px;
+          font-weight: 300;
+        }
+        .banner-txt h2 {
+          font-size: 30px;
+          font-weight: 300;
+        }
+        .banner-txt p {
+          font-size: 20px;
+          font-weight: 100;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-txt">
+          <h1>
+            1111111111111
+            <small>222222</small>
+          </h1>
+          <h2>33333333</h2>
+          <p>
+            444444
+            <br />
+            55555555
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

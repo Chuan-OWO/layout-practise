@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      .main-header {
+        background-color: #ccc;
+      }
+      .main-header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        max-width: 1200px;
+        margin: auto;
+      }
+      .main-header .logo {
+        width: 100px;
+      }
+      .main-header .logo img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .main-header .main-nav {
+        display: flex;
+      }
+      .main-header .main-nav:first-of-type {
+        order: -1;
+      }
+      .main-header .main-nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0);
+        transition: 0.3s;
+        /* display: inline-block; */
+      }
+      .main-header .main-nav a:hover {
+        transform: translateY(-5px);
+      }
+
+      .main-header .main-nav a:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 0;
+        border-bottom: 1px solid #fff;
+        transition: 0.3s;
+      }
+      .main-header .main-nav a:hover:after {
+        left: 1em;
+        right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="https://picsum.photos/200/200?random=10" alt="" />
+        </a>
+        <nav class="main-nav">
+          <a href="#">女孩他的1</a>
+          <a href="#">女孩他的2</a>
+        </nav>
+        <nav class="main-nav">
+          <a href="#">女孩他的1</a>
+          <a href="#">女孩他的2</a>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
