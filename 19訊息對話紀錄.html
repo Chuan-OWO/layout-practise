@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訊息對話紀錄</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dialouge {
+        width: 500px;
+        padding: 20px;
+        box-shadow: 0 0 10px #3e92cc;
+        border-color: #f4f5f7;
+      }
+      .user {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .local {
+        justify-content: flex-end;
+      }
+      .user .avatar {
+        width: 60px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .user .pic {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .user .pic img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .user .txt {
+        background-color: #aaa;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+      }
+      .remote .txt {
+        margin-left: 20px;
+        margin-right: 80px;
+        color: #aaa;
+        background-color: #fff;
+      }
+      .local .txt {
+        margin-right: 20px;
+        margin-left: 80px;
+        order: -1;
+        background-color: #3e92cc;
+        color: #fff;
+      }
+      .remote .txt::before,
+      .local .txt::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      .remote .txt::before {
+        border-right: 10px solid #b9b9b9;
+        left: -10px;
+      }
+      .local .txt::before {
+        border-left: 15px solid #3e92cc;
+        right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dialouge">
+      <div class="user remote">
+        <div class="avatar">
+          <div class="pic">
+            <img src="https://picsum.photos/100/100?random=12" alt="" />
+          </div>
+          <div class="name">Alce</div>
+        </div>
+        <div class="txt">你好111111111111111111</div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <div class="pic">
+            <img src="https://picsum.photos/100/100?random=16" alt="" />
+          </div>
+          <div class="name">Bill</div>
+        </div>
+        <div class="txt">職責遠程偉大原則故意一種天堂顧問大力開關</div>
+      </div>
+    </div>
+  </body>
+</html>
