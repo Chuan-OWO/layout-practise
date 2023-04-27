@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>時間軸</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      body {
+        background-color: #edece1;
+      }
+      .wrap {
+        width: 960px;
+        margin: auto;
+      }
+      .wrap::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: aqua;
+        clear: both;
+      }
+      .timeline {
+        padding: 100px 0 200px;
+      }
+
+      .timeline li {
+        width: 50%;
+        padding: 20px 0;
+        position: relative;
+        /* background-color: blueviolet; */
+      }
+      .timeline li:nth-child(odd) {
+        float: left;
+        padding-right: 100px;
+      }
+      .timeline li:nth-child(even) {
+        float: right;
+        padding-left: 100px;
+        transform: translateY(50%);
+      }
+      /* 中兼縣 */
+      .timeline li:nth-child(odd)::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 1px;
+        height: 100%;
+        background-color: #ccc;
+        right: 0;
+
+        z-index: -1;
+      }
+      .timeline li:last-child::after {
+        height: 50%;
+      }
+      /* 圓點 */
+      .timeline li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #aaa;
+        z-index: 2;
+      }
+
+      .timeline li:nth-child(odd)::before {
+        right: -10px;
+      }
+      .timeline li:nth-child(even)::before {
+        left: -10px;
+      }
+
+      .timeline a {
+        display: block;
+        text-decoration: none;
+        background-color: #fff2f2;
+        border: 1px solid #aaa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #888;
+      }
+
+      .timeline a:hover {
+        background-color: #6fa5f6;
+      }
+      .timeline a:hover h2,
+      .timeline a:hover a {
+        color: #fff;
+      }
+      .timeline h2 {
+        color: #333;
+        font-weight: 700;
+
+        border-bottom: 1px solid;
+      }
+      .timeline p {
+        margin-top: 10px;
+        color: #666;
+        font-weight: 100;
+      }
+
+      .timeline h2::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100px;
+        background-color: #ccc;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .timeline li:nth-child(odd) h2::after {
+        right: 0;
+      }
+      .timeline li:nth-child(even) h2::after {
+        left: 0;
+      }
+
+      @keyframes cc {
+        0% {
+          background-color: #888;
+        }
+        100% {
+          background-color: rgb(77, 255, 157);
+        }
+      }
+      .timeline li:hover::before {
+        animation: cc 1s linear forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>cltorem5</h1>
+      <p>
+        來源相互開放收集兩人方案適用於，動態進入授權轉變對他不可以，不必一顆，地上皇帝每天輔助另一個移動那是突然站在二手兩年附近品質加油，大賽星座一陣今日辦公室觀點不能也想情緒價值，開關緊急地說對方檢查看來出版研發目前技術台北，打了實踐確實員工大家顯然彼此告訴你。
+      </p>
+
+      <ul class="timeline">
+        <li>
+          <a href="#">
+            <h2>1</h2>
+            <p>
+              發達大家意外學習合理製造行情傷害休閒進口後悔網上能量汽車，出了伺服器僅供當年手機鈴聲，回憶實際太陽製品飯店是不是還沒姐姐技能立刻理論，你們奧客什麼事後面部門工業，證明心情違反，文件回憶是在，缺乏業績五金上了回覆民國幹什麼每天郵件都市條例五金，她是電器生日。
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h2>2</h2>
+            <p>
+              發達大家意外學習合理製造行情傷害休閒進口後悔網上能量汽車，出了伺服器僅供當年手機鈴聲，回憶實際太陽製品飯店是不是還沒姐姐技能立刻理論，你們奧客什麼事後面部門工業，證明心情違反，文件回憶是在，缺乏業績五金上了回覆民國幹什麼每天郵件都市條例五金，她是電器生日。
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h2>3</h2>
+            <p>
+              發達大家意外學習合理製造行情傷害休閒進口後悔網上能量汽車，出了伺服器僅供當年手機鈴聲，回憶實際太陽製品飯店是不是還沒姐姐技能立刻理論，你們奧客什麼事後面部門工業，證明心情違反，文件回憶是在，缺乏業績五金上了回覆民國幹什麼每天郵件都市條例五金，她是電器生日。
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
